@@ -1,0 +1,143 @@
+body{
+    background-image: url('https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg');
+    background-size: cover;
+}
+.container {
+    position: relative;
+    top: 45px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 110px 110px 110px 110px;
+    gap: 40px;
+    place-content: center;
+   
+}
+.box {
+    background-color: #abaaaa; 
+   outline: 1px solid #b4b2b2; 
+   cursor: pointer;      
+}
+.colour{
+    background-color:rgba(250, 58, 58, 0.553);
+    width: 150px;
+    height: 110px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-family: sans-serif;
+   text-transform: capitalize;
+} 
+#box1{
+    transform: scaleX(1);
+    transition: all .8s ease;
+}
+.box:hover #box1{
+    transform: scaleX(1.5);
+   
+}
+#box2{
+    transform: scaleY(1);
+    transition: all .8s ease;
+}
+.box:hover #box2{
+    transform: scaleY(1.5);
+}
+#box3{
+    transform: scale(1);
+    transition: all .8s ease;
+}
+.box:hover #box3{
+    transform: scale(1.5);
+}
+#box4{
+    transform: translateX(0px);
+    transition: all .8s ease;
+}
+.box:hover #box4{
+    transform: translateX(50px);
+}
+#box5{
+    transform: translateY(0px);
+    transition: all .8s ease;
+}
+.box:hover #box5{
+    transform: translateY(50px);
+}
+#box6{
+    transform: translate(0px , 0px);
+    transition: all .8s ease;
+}
+.box:hover #box6{
+    transform: translate(50px , 50px);
+}
+#box7{
+    transform: matrix(1,1,1,1);
+    transition: all .8s ease;
+}
+.box:hover #box7{
+    transform: matrix(1, -1, 0, 1, 0, 0);
+}
+#box8{
+    transform:rotate(0deg) ;
+    transition: all .8s ease;
+}
+.box:hover #box8{
+    transform: rotate(270deg);
+}
+#box9{
+    transform:skew(1,1) ;
+    transition: all .8s ease;
+}
+.box:hover #box9{
+    transform: skew(40deg , 30deg);
+}
+#box10{
+    transform:skewX(1) ;
+    transition: all .8s ease;
+}
+.box:hover #box10{
+    transform: skewX(60deg);
+}
+#box11{
+    transform:skewY(1) ;
+    transition: all .8s ease;
+}
+.box:hover #box11{
+    transform: skewY(60deg);
+}
+#box12{
+    transform:matrix3d(1);
+    transition: all .8s ease;
+}
+.box:hover #box12{
+    transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1)
+}
+#box13{
+    transform:translate3d(1,1,1) ;
+    transition: all .8s ease;
+}
+.box:hover #box13{
+    transform:translate3d(1px, 1px, 50px) rotate3d(3, 2, 2, 90deg);
+}
+#box14{
+    transform: perspective(1) scaleZ(1) rotateY(0deg);
+    transition: all .8s ease;
+}
+.box:hover #box14{
+    transform: perspective(500px) scaleZ(2) rotateY(45deg);
+}
+#box15{
+    transform: perspective(1) scaleZ(1) rotateX(0deg);
+    transition: all .8s ease;
+}
+.box:hover #box15{
+    transform: perspective(500px) scaleZ(2) rotateX(45deg);
+}
+#box16{
+    transform:translateZ(1) ;
+    transition: all .8s ease;
+}
+.box:hover #box16{
+    transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
+}
