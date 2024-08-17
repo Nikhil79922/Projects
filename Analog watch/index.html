@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body >
+
+<div id="time" class=" mt-3 bg-[url('/img/watchss.png')] md:ml-[10vw] lg:ml-[23vw] xl:ml-[25vw] rounded-full bg-contain w-[650px]  bg-repeat h-[650px]    relative">
+
+<div id="circle"  class=" absolute h-[20px]  w-[20px]  top-[313.9px] left-[315px] rounded-full border-2 bg-black z-40 border-black "></div>
+
+    <div id="hour"
+        class="absolute h-[145px]  w-[12px]  top-[182px] left-[319px] opacity-[.6] rounded-full border-2 bg-black z-30 border-black origin-bottom">
+    </div>
+    <div id="min"
+        class="absolute  h-[193px] w-[8px]   top-[133px] opacity-[.7] left-[320.9px] rounded-full  border-2 bg-black z-20  border-black origin-bottom">
+    </div>
+    <div id="sec" class=" absolute h-[229px]  w-[4px] top-[97px]  left-[323.2px] opacity-[1] rounded-full border-2 bg-black z-10 origin-bottom border-black"></div>
+</div>
+    
+<script src="server.js"></script>
+</body>
+</html>
