@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIK TAC TOE</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <div
+        class="nav relative z-50 bg-purple-900 text-purple-200 h-[60px] w-full flex items-center text-3xl font-semibold">
+        MyTikTacToe.com
+    </div>
+
+    <div id="content" class="w-full flex-col flex gap-16 md:flex-row md:gap-32 justify-center items-center">
+
+
+        <div id="tiktak" class="mt-9 relative z-10">
+            <div id="line" class="w-[0vw] h-[4px] bg-red-700 transition-all duration-[1s] ease-in-out "></div>
+            <div id="container" class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-0">
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center border-r-4 border-b-4 border-black cursor-pointer hover:bg-red-300 ">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center border-r-4 border-b-4 border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center  border-b-4 border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center border-r-4 border-b-4 border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center border-r-4 border-b-4 border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center  border-b-4 border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center border-r-4  border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center border-r-4  border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span>
+                </div>
+                <div
+                    class="box  w-[30vw] md:w-[150px] h-[30vw] md:h-[150px] text-center  border-black cursor-pointer hover:bg-red-300">
+                    <span class="boxtext text-9xl"></span></div>
+            </div>
+        </div>
+
+        <div id="Info" class=" flex flex-col gap-3">
+            <h1 class="text-4xl font-semibold ">
+                Welcome To My Tik Tac Toe Game
+            </h1>
+            <div id="status" class="flex gap-6">
+                <div id="status1" class="text-lg font-semibold ">
+                    Turn For X
+                </div>
+                <button id="status2"
+                    class="bg-purple-400 text-lg font-semibold border-2 w-[80px] rounded-lg border-black">Reset</button>
+
+            </div>
+            <div id="img">
+                <img class=" image w-[0vw] absolute z-0 top-[80px] left-[50px] md:left-[10px] transition-all duration-[1s] ease-in-out"
+                    src="https://i.pinimg.com/originals/e4/d2/c1/e4d2c1d0da356797359acd9270bcdd77.gif" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="server.js"></script>
+</body>
+
+</html>
