@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-[url('/imgs/bg.png')] bg-no-repeat" style=" background-size: 100vw 100vh;">
+    <div class="container">
+        <div id="over" class="gameover hidden flex  justify-center items-end text-7xl font-bold  h-[30vh] w-[100vw]">
+            Game Over
+        </div>
+        <div class="score flex justify-center  text-xl font-semibold">
+            Your Score : 0
+        </div>
+        <div id="reset" class="btn flex justify-center hidden">
+            <button
+                class=" w-[120px] h-[25px] rounded-full mt-2 text-center  text-sm  border-2 border-black  bg-blue-500 font-bold  transition-transform transform active:scale-95">
+                Restart</button>
+        </div>
+
+        <div id="dino" class=" w-[150px] absolute bottom-0">
+            <img src="/imgs/dino.png" alt="">
+        </div>
+
+        <div id="dragon" class=" text-white animate-fadeIn w-[110px] absolute left-[50vw] bottom-0">
+            <img src="/imgs/dragon.png" alt="">
+        </div>
+
+    </div>
+
+
+    <script src="server.js"></script>
+</body>
+
+</html>
