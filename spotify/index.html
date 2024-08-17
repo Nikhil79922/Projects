@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="spotify flex">
+       
+        <div class="left flex">
+            <div class="close invert cursor">
+                <img src="svgs/close.svg" alt="">
+            </div>
+            <div class="homebar">
+                <div class="logo cursor ">
+                    <img src="svgs/logo.svg" alt="">
+                </div>
+                <div class="home flex cursor">
+                    <img src="svgs/home.svg" alt="">
+                    <div>Home</div>
+                </div>
+                <div class="searchbar flex cursor transition">
+                    <img src="svgs/search.svg" alt="">
+                    <div>Search</div>
+                </div>
+            </div>
+            <div class="libary">
+                <div class="lib-logo flex cursor">
+                    <img src="svgs/playlist.svg" alt="">
+                    <p class="transition">Your Libary</p>
+                </div>
+                <div class="songlist ">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer flex">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="header flex">
+                <div class="arrows flex ">
+<div class="hamburger">
+                    <img  class="invert cursor" src="svgs/hamburger.svg" alt="">
+                </div>
+                    <img class="cursor" src="svgs/left.svg" alt="">
+                    <img class="cursor" src="svgs/right.svg" alt="">
+                </div>
+                <div class="btn flex">
+                    <button id="sign" class="cursor transition">Sign up</button>
+                    <button id="log" class="cursor transition">Log in</button>
+                </div>
+            </div>
+
+            <div class="heading">
+                <h1>Spotify Playlists</h1>
+            </div>
+
+            <div class="container flex">
+                    
+            </div>
+            <div class="playbar flex">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="up flex">
+                    <div class="songname"></div>
+                    <div class="songbtn flex">
+                        <img id="prev" class="invert" src="svgs/prevsong.svg" alt="">
+                        <img id="play" class="invert" src="svgs/play.svg" alt="">
+                        <img id="next" class="invert" src="svgs/nextsong.svg" alt="">
+                    </div>
+                    <div class="voltime flex ">
+                    <div class="songtime"></div>
+                    <div class="vol flex">
+                    <img class="invert cursor"  id="volume" src="svgs/volume.svg" alt="">
+                    <input class="invert" type="range" name="" id="">
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
