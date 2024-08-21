@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Password</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .thick-strike {
+            position: relative;
+            display: inline-block;
+        }
+
+        .thick-strike::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 55%;
+            height: 4px;
+            /* Thickness of the strikethrough */
+            background-color: currentColor;
+            transform: translateY(-70%);
+            color: rgba(245, 2, 2, 0.652);
+        }
+    </style>
+</head>
+
+<body class="w-[100vw] h-[100vh] bg-slate-900 flex justify-center items-center">
+    <div id="main"
+        class="w-[40vw] h-[60vh] bg-black text-white flex flex-col gap-7 justify-center items-center rounded-2xl shadow-cyan-700 shadow-2xl">
+
+        <div class="passbox relative rounded-xl w-[35vw] flex items-center pl-2 h-[47px] bg-slate-300">
+            <p id="Display" class=" relative text-gray-500 font-medium w-[30vw] overflow-auto text-[27px]">Generate
+                Password </p>
+
+            <div
+                class="copied  hidden absolute z-10 w-[80px] text-center h-[27px] rounded-full bg-indigo-700 top-[-32px] left-[29.5vw]">
+                <p>Copied</p>
+            </div>
+            <div class="dot absolute hidden z-0 top-[-11px] left-[32.4vw] w-[10px] h-[10px] rotate-45  bg-indigo-700">
+            </div>
+            <div class="copy absolute top-[3px] left-[31vw] ">
+                <i id="copybtn"
+                    class="fa-regular fa-copy  bg-indigo-700 pl-[10.7px] cursor-pointer active:bg-red-400 active:scale-75  pt-[6.5px] text-2xl w-[42px] h-[40px] rounded-2xl text-white"></i>
+            </div>
+        </div>
+        <div class="condition w-[34vw] text-yellow-500   gap-3 flex flex-col">
+            <div id="one" class="flex justify-between items-center ">
+                <label for="passlen" id="first" class="text-[19px] font-sans font-medium ">Password Length</label>
+                <input type="number" id="passlen" class="w-[40px] h-[20px] focus:outline-none text-black">
+            </div>
+            <div id="two" class="flex justify-between items-center ">
+                <label id="second" class=" text-[19px] font-sans font-medium">Contains Uppercase</label>
+                <input type="checkbox" id="Uppercase"
+                    class=" w-[18px] cursor-pointer h-[20px] focus:outline-none text-black">
+            </div>
+            <div id="three" class="flex justify-between items-center ">
+                <label id="third" class=" text-[19px] font-sans font-medium">Contains Lowercase</label>
+                <input type="checkbox" id="Lowercase"
+                    class=" w-[18px] cursor-pointer h-[20px] focus:outline-none text-black">
+            </div>
+            <div id="four" class="flex justify-between items-center ">
+                <label id="fourth" class=" text-[19px] font-sans font-medium">Contains Number</label>
+                <input type="checkbox" id="Number"
+                    class=" w-[18px] cursor-pointer h-[20px] focus:outline-none text-black">
+            </div>
+            <div id="five" class="flex justify-between items-center ">
+                <label id="fifth" class=" text-[19px] font-sans font-medium">Contains Symbols</label>
+                <input type="checkbox" id="Symbol"
+                    class=" w-[18px] cursor-pointer h-[20px] focus:outline-none text-black">
+            </div>
+        </div>
+        <div class="btn">
+            <button id="butn"
+                class="w-[16vw] flex justify-center items-center h-[45px] bg-gradient-to-r from-blue-700 via-purple-700 to-pink-700  rounded-full text-[26px] ">Generate</button>
+        </div>
+    </div>
+    <script src="server.js"></script>
+</body>
+
+</html>
