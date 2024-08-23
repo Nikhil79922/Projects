@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="flex w-[100vw] h-[100vh] justify-center items-center bg-black ">
+
+  <div class="main flex flex-col gap-5 w-[400px] lg:w-[33vw]  rounded-xl h-[490px] bg-gradient-to-r from-indigo-300 via-blue-300 to-cyan-400  shadow-cyan-500
+shadow-2xl  justify-center items-center">
+
+    <div class="city flex items-center gap-2">
+      <input type="text" name="" id="city" placeholder="City Name"
+        class=" w-[270px] lg:w-[23vw] h-[50px] rounded-full focus:outline-none pl-[20px] text-zinc-500 text-[18px] font-medium ">
+      <div id="search" class="icon flex justify-center hover:bg-slate-200 hover:text-white items-center  w-[46.5px] h-[46.5px] cursor-pointer rounded-full bg-white">
+        <i class="fa-solid fa-magnifying-glass text-gray-600 text-xl"></i>
+      </div>
+    </div>
+
+    <div class="image  flex flex-col gap-3 justify-center items-center ">
+      <img id="img" src="/assets/404.png" alt="" class="w-[136px] h-[136px]">
+
+      <p id="celcius" class="text-black text-[55px] h-[50px] font-semibold">0<sup
+          class="font-light text-[35px]">o</sup><b class="font-normal text-[36px]">C</b></p>
+
+      <p id="cityname" class="text-black text-[40px] font-normal">City Name</p>
+    </div>
+
+    <div class="lower flex gap-[5vw] items-center">
+
+      <div class="humidity flex gap-1 items-center w-[10 0px] h-[60px]">
+        <img src="/assets/wave.svg" alt="">
+        <div class="info flex flex-col">
+          <p id="percentage" class="text-[24px] h-[30px] text-black font-bold">0%</p>
+          <p class="text-[16px] text-black font-normal">Humidity</p>
+        </div>
+      </div>
+
+      <div class="humidity flex gap-1 items-center w-[10 0px] h-[60px]">
+        <img src="/assets/mist.svg" alt="" class="w-[48px] h-[48px] ">
+        <div class="info flex flex-col">
+          <p id="speed" class="text-[24px] h-[30px] text-black font-bold">0 Km/h</p>
+          <p class="text-[16px] text-black font-normal">wind speed</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
