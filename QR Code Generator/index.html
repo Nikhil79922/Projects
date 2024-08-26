@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-slate-900 h-[100vh] flex justify-center items-center">
+ 
+    <div class="main w-[34vw] transition-all duration-[2s]   h-[200px] bg-white rounded-2xl flex flex-col justify-center items-center gap-4">
+        <p class="font-bold ">Enter your Text or URL</p>
+
+        <input type="text" name="" id="text" class="w-[20vw]  h-[45px] text-[15px] pl-3 border-[1.5px] border-gray-500 focus:outline-none rounded-lg " placeholder="Text or URL">
+
+ <div id="Img" class=" hidden transition-all duration-[1s] w-[140px]  h-[140px] flex justify-center items-center rounded-lg border-[1.2px] border-gray-500">
+        <img src="" alt="" id="QRimg" class="w-[120px] hidden h-[120px]">
+    </div>
+
+        <button id="generate" class="w-[150px] h-[45px] bg-blue-500 rounded-2xl text-white text-[16px] active:bg-green-300 active:text-[18px] active:text-black">Generate QR</button>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
