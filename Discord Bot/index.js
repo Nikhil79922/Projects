@@ -11,7 +11,7 @@ client.on("messageCreate", (message) => {
   }
   if(message.content.startsWith("Hey")){
     return message.reply({
-      content: `Gandu's Are Not Entertain Here, In Short:"Bhag BSDk"`
+      content: `WhatsUp ☠️`
   });
   }
   if(message.content.startsWith("How")){
